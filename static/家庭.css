@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+/* 影片區塊樣式 */
+#video-section {
+    width: 100%;
+    height: 25%;
+    background-color: #000; /* 背景為黑色 */
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: 25%;
+}
+/* 導覽列樣式 */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+.navbar li {
+    list-style: none;
+    position: relative;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+/* 下拉式選單 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 8px 12px;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+/* 首頁樣式 */
+#introduction {
+  text-align: center; /* 讓標題置中 */
+  margin: 20px auto; /* 添加上下間距 */
+}
+
+.intro-container {
+  display: flex; /* 使用 Flexbox 排列 */
+  align-items: center; /* 照片和文字垂直置中 */
+  justify-content: center; /* 將內容置中 */
+  gap: 20px; /* 照片與文字間的間距 */
+  margin-top: 10px; /* 與標題的距離 */
+}
+
+.intro-img {
+  width: 800px; /* 照片寬度 */
+  height: 500px; /* 照片高度 */
+  border-radius: 5%; /* 照片變成圓形 */
+  object-fit: cover; /* 確保圖片不變形 */
+}
+
+.intro-text {
+  font-size: 30px; /* 字體大小 */
+  line-height: 1.5; /* 行距 */
+  color: #333; /* 字體顏色 */
+  text-align: left; /* 文字靠左對齊 */
+}
+
+/* 聊天按鈕樣式 */
+#chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20%;
+    width: 60px;
+    height: 60px;
+    background-color: #f39c12;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #chat-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  #chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    display: none; /* 初始隱藏 */
+    flex-direction: column;
+  }
+  #chat-header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+  }
+  #chat-content {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  .message {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .message.goku {
+    background-color: #f1c40f;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    text-align: left;
+  }
+  .message-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  #chat-input {
+    display: flex;
+    padding: 10px;
+  }
+  #chat-input input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  #send-button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
