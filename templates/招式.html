@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>孫悟空專屬網站</title>
+    <link rel="stylesheet" href="static/招式.css">
+</head>
+<body>
+    <!-- 背景音效 -->
+    <audio id="background-audio" src="static/backgroundmusic.m4a" preload="auto"></audio>
+    <!-- 影片區塊 -->
+    <section id="video-section">
+        <h1>影片展示</h1>
+        <video width="100%" height="25%" autoplay muted loop>
+            <source src="static/v.mp4" type="video/mp4">
+            你的瀏覽器不支持視頻播放。
+        </video>
+    </section>
+    <!-- 頂部導覽列 -->
+    <nav>
+        <ul class="navbar">
+            <li class="dropdown">
+                <a>背景</a>
+                <ul class="dropdown-content">
+                    <li><a href="cb">角色背景</a></li>
+                    <li><a href="fam">家庭</a></li>
+                    <li><a href="wb">作品背景</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>故事</a>
+                <ul class="dropdown-content">
+                    <li><a href="7">七龍珠</a></li>
+                    <li><a href="z">龍珠Z</a></li>
+                    <li><a href="kai">龍珠改</a></li>
+                    <li><a href="super">龍珠超</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>技能</a>
+                <ul class="dropdown-content">
+                    <li><a href="tran">變身</a></li>
+                    <li><a href="move">招式</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" id="page-l">
+                <a>語言</a>
+                <ul class="dropdown-content">
+                    <li><a href="tw">中文</a></li>
+                    <li><a href="ct">粵語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 首頁內容 -->
+    <main>
+        <h1>瞬間轉移</h1>
+        <div id="container">
+            <div id="left-area" class="image-area">
+                <img src="static/瞬間轉移.jpeg" alt="左圖" id="left-img" class="toggle-img">
+            </div>
+            <div id="center-area">
+                <p>
+                技能概述<br>
+                瞬間轉移是一種基於 氣的感知 進行即時移動的技能。使用者能透過感應遠處的氣息，將自己和其他人或物體瞬間移動到目標位置，無論距離多遠。<br>
+                <br>
+                技能特點<br>
+                1. 極速傳送：<br>
+                可瞬間抵達任何有氣息的地點，不受地理限制。<br>
+                即使是在宇宙中，也能輕鬆傳送到其他星球。<br>
+                2. 氣息感應：<br>
+                必須能清楚地感知目標地點的氣息，才能成功傳送。<br>
+                如果目標沒有氣（如機器人或其他無生命體），則無法使用。<br>
+                3. 靈活應用：<br>
+                可用於戰鬥、逃脫、支援等多種情境。<br>
+                能攜帶其他人進行傳送。<br>
+                <br>
+                學習背景<br>
+                孫悟空在擊敗弗利沙後，因為那美克星爆炸，來到了雅德拉特星球。<br>
+                在當地，他學習了雅德拉特星人的特殊技能，包括瞬間轉移，並將其應用於未來的戰鬥中。<br>
+                <br>
+                經典場景<br>
+                1. 對抗沙魯（賽魯）篇：<br>
+                孫悟空利用瞬間轉移將沙魯帶到界王星，以避免地球的毀滅，雖然犧牲了界王星，但展現了技能的救援潛力。<br>
+                2. 對抗布歐篇：<br>
+                瞬間轉移成為悟空戰鬥中的核心，頻繁用於規避攻擊和進行突襲。<br>
+                3. 宇宙探索：<br>
+                悟空多次利用瞬間轉移快速往返地球與其他星球，成為宇宙中旅行的便利工具。<br>
+                <br>
+            </div>
+            <div id="right-area" class="space-area"></div>
+            <p>
+
+            </p>
+        </div>
+        <h1>元氣彈</h1>
+        <div class="image-container" id="image-container">
+            <img id="main-image" src="static/元氣彈.jpeg" alt="元氣彈圖片">
+            <div class="circle" id="circle"></div>
+            <p class="intro-text">
+                技能來源與原理<br>
+                1. 來源：<br>
+                元氣彈是悟空跟界王學習的特殊技能，屬於界王拳以外的另一大絕招。界王教導悟空如何從周遭的生命體吸取能量，並將其集中於手中，形成一顆巨大能量球。<br>
+                2. 原理：<br>
+                元氣彈吸收了天地間一切生命體的能量，包括人類、動物、植物，甚至是星球本身。<br>
+                需要周圍生命的善意配合才能提供能量。<br>
+                因為聚集了各方力量，元氣彈的威力無窮大，尤其適合用於對抗邪惡的強大敵人。<br>
+                <br>
+                使用方式<br>
+                1. 凝聚能量： 悟空舉起雙手，專注精神，從自然界吸取能量。<br>
+                這個過程需要時間，悟空常需要其他角色掩護他完成元氣彈的準備。<br>
+                2. 投擲元氣彈： 當能量足夠時，悟空將元氣彈朝目標投擲，對敵人造成毀滅性的打擊。<br>
+                <br>
+                經典場景<br>
+                1. 對戰弗利沙： <br>
+                在那美克星篇，悟空凝聚地球與那美克星等星球生命的能量，對抗宇宙霸主弗利沙。儘管元氣彈成功命中，但弗利沙依然倖存，成為經典的反轉劇情。<br>
+                2. 對戰魔人布歐：<br>
+                元氣彈的最高潮場景是在布歐篇。悟空吸收地球全體人類提供的能量，製造出史上最大的元氣彈，成功消滅魔人布歐，拯救宇宙。<br>
+                這一場景展現了團結的力量，也呼應了悟空熱愛和平的主題。<br>
+            </p>
+        </div>
+        <h1>界王拳</h1>
+        <div class="intro-container">
+            <img id="toggle-image" src="static/悟空.png" alt="界王拳">
+            <p id="toggle-text">
+                界王拳的特性與效果<br>
+1. 戰鬥力倍增：<br>
+界王拳的核心能力是能在短時間內大幅提升使用者的力量、速度、敏捷度和耐久性。<br>
+使用者可以控制提升倍率，例如「界王拳×2」、「界王拳×10」，但倍率越高，對身體的負擔越大。<br>
+2. 能量爆發：<br>
+當使用界王拳時，使用者的氣會以紅色光芒環繞，並伴隨強烈的能量波動，身體也會瞬間充滿力量。<br>
+3. 時間限制：<br>
+界王拳並不能長時間持續，因為倍率的增加會造成極大的體力消耗和身體損傷，甚至可能致命。<br>
+<br>
+界王拳的修煉與使用<br>
+1. 修煉來源：<br>
+孫悟空在界王星修煉時，從界王大人那裡學習到界王拳。<br>
+修煉過程需要使用者能精確地控制自己的氣，否則可能導致能量失控。<br>
+2. 首次使用：<br>
+界王拳第一次實際運用是在對抗賽亞人貝吉塔時，悟空使用了界王拳×3，並在最後使用界王拳×4打出龜派氣功，但對身體造成了嚴重損傷。<br>
+<br>
+進一步的發展<br>
+對抗弗力札時的極限：<br>
+悟空在那美克星對抗弗力札的戰鬥中，將界王拳推到「界王拳×20」，這顯示他在修煉後對技能的掌握程度更高。<br>
+藍色界王拳：<br>
+在《七龍珠超》中，界王拳被與超級賽亞人藍色形態結合（Super Saiyan Blue Kaioken），使悟空的戰鬥力提升到更高層次，但也加劇了對身體的損害。<br>
+<br>
+經典時刻<br>
+1. 悟空對抗貝吉塔（賽亞篇）：<br>
+界王拳首次展現其威力，成功壓制了貝吉塔的攻勢。<br>
+2. 悟空對抗弗力札（那美克篇）：<br>
+使用界王拳×20的龜派氣功與弗力札激烈對戰，雖未能徹底擊敗對手，但展現了其巨大潛能。<br>
+            </p>
+        </div>
+        <h1>龜派氣功</h1>
+        <div id="container2">
+            <!-- 圖片 -->
+            <div id="image" onclick="handleClick()"></div>
+            <!-- 影片 -->
+            <video id="video">
+                <source src="static/龜派氣功.mp4" type="video/mp4">
+                你的瀏覽器不支援影片播放。
+            </video>
+            <!-- 文字 -->
+            <p id="text">
+                技能特點<br>
+1. 能量聚集與釋放<br>
+龜派氣功是一種將體內氣（能量）集中到雙掌之間，然後瞬間釋放出強大衝擊波的攻擊技能。釋放過程包括：<br>
+雙掌向後聚氣，喊出「龜～派～氣～功～」。<br>
+最後向目標方向推出，形成藍色光波。<br>
+2. 強大的破壞力<br>
+龜派氣功的威力隨著使用者的氣增強，可摧毀山脈甚至星球，是一種可遠可近的強力招式。<br>
+3. 學習門檻<br>
+起初，龜派氣功被認為是非常困難的招式，但孫悟空在第一次聽到後就能模仿成功，展示出他驚人的天賦。<br>
+<br>
+招式變化<br>
+隨著劇情發展，龜派氣功出現了多種變化形式，增加了實用性和威力：<br>
+1. 超龜派氣功：<br>威力加倍，釋放時需要更高的能量。<br>
+2. 瞬間移動龜派氣功：<br>結合瞬間移動，可對敵人進行近距離的突然攻擊。<br>
+3. 父子龜派氣功：<br>孫悟飯與孫悟空聯手，集中雙方的力量共同釋放。<br>
+<br>
+經典場景<br>
+孫悟空初次使用龜派氣功<br>
+在幫助修理烏龍的破房時，悟空初次模仿龜仙人的招式，將房屋炸得粉碎。<br>
+對決比克大魔王<br>
+龜派氣功在對戰比克大魔王時成為致命一擊，展現了其關鍵性的重要。<br>
+對決弗利沙<br>
+在那美克星的戰鬥中，孫悟空以超級賽亞人的形態施展龜派氣功，與弗利沙的死亡光線對抗，成為經典對決之一。<br>
+            </p>
+        </div>
+        <h1>融合</h1>
+        <div id="container3">
+            <div id="image1" class="image1" onclick="handleImageClick(1)" alt="1"></div>
+            <div id="text1">
+                融合術的特點<br>
+1. 力量倍增：<br>
+融合後的個體戰鬥力大幅提升，遠超兩人個別力量的總和。例如，孫悟空與貝吉塔融合後的「悟吉塔」能輕鬆壓制強敵。<br>
+2. 外觀特徵：<br>
+融合後的角色通常會保留兩名融合者的某些外貌特徵，例如髮型、服飾或臉部輪廓的結合。<br>
+3. 融合時限：<br>
+融合效果並非永久，根據方法不同，維持時間會有所差異：<br>
+融合舞：可維持 30 分鐘，雙方能量消耗過快時會提前結束。<br>
+波特拉耳環：一般情況下是永久融合，但某些條件下可以分離。<br>
+<br>
+融合術的條件<br>
+1. 身高與力量匹配：<br>
+融合的雙方需要身高和力量相近，否則會導致失敗（如胖悟吉塔）。<br>
+動作同步：<br>
+融合舞需要雙方精準同步地完成特定的舞蹈動作，任何一方出錯都會導致失敗，甚至出現怪異的融合體。<br>
+<br>
+融合術的限制與風險<br>
+失敗風險：<br>
+若動作不同步或條件不足，可能產生怪異的融合體，例如胖版或瘦弱版的角色。<br>
+能量消耗：<br>
+融合後的角色消耗能量非常快，若不慎控制可能迅速脫離融合狀態。<br>
+<br>
+經典場景<br>
+1. 魔人普烏篇：<br>
+孫悟空與貝吉塔使用波特拉耳環融合成貝吉特，壓制超級魔人普烏。<br>
+劇場版《復活的融合！悟空與貝吉塔》：<br>
+悟空與貝吉塔首次以融合舞變身為悟吉塔，對抗邪惡的強敵。<br>
+《七龍珠超 布羅利》：<br>
+孫悟空與貝吉塔再次融合成悟吉塔，成功打敗布羅利。<br>
+            </div>
+            <div id="image2" class="image1" onclick="handleImageClick(2)" alt="2"></div>
+            <div id="image3" class="image1" onclick="handleImageClick(3)" alt="3"></div>
+        </div>
+        <!-- 聊天按鈕 -->
+        <div id="chat-button">
+            <img src="static/chat1.jpg" alt="Chat with Goku" id="chat-button-img">
+        </div>
+        <!-- 聊天框 -->
+        <div id="chat-box">
+            <div id="chat-header">與孫悟空聊天</div>
+            <div id="chat-content">
+                <!-- 預設的聊天框對話內容 -->
+                <div class="message goku">
+                    <img src="static/chat1.jpg" alt="Goku" class="message-icon">
+                    嗨！我是悟空，有什麼想問的嗎？
+                </div>
+            </div>
+            <div id="chat-input">
+                <input type="text" id="user-message" placeholder="輸入訊息...">
+                <button id="send-button">送出</button>
+            </div>
+        </div>
+  
+    </main>
+    <script src="static/首頁.js"></script>
+</body>
+</html>

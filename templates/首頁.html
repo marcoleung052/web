@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>孫悟空專屬網站</title>
+    <link rel="stylesheet" href="static/首頁.css">
+</head>
+<body>
+     <!-- 全屏 GIF 開場畫面 -->
+     <div id="gif-screen">
+        <img src="static/龜派氣功.gif" alt="加載動畫">
+    </div>
+    <!-- 背景音效 -->
+    <audio id="background-audio" src="static/backgroundmusic.m4a" preload="auto"></audio>
+    <!-- 影片區塊 -->
+    <section id="video-section">
+        <h1>影片展示</h1>
+        <video width="100%" height="25%" autoplay muted loop>
+            <source src="static/v.mp4" type="video/mp4">
+            你的瀏覽器不支持視頻播放。
+        </video>
+    </section>
+    <!-- 頂部導覽列 -->
+    <nav>
+        <ul class="navbar">
+            <li class="dropdown">
+                <a>背景<a>
+                <ul class="dropdown-content">
+                    <li><a href="cb">角色背景</a></li>
+                    <li><a href="fam">家庭</a></li>
+                    <li><a href="wb">作品背景</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>故事</a>
+                <ul class="dropdown-content">
+                    <li><a href="7">七龍珠</a></li>
+                    <li><a href="z">龍珠Z</a></li>
+                    <li><a href="kai">龍珠改</a></li>
+                    <li><a href="super">龍珠超</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>技能</a>
+                <ul class="dropdown-content">
+                    <li><a href="tran">變身</a></li>
+                    <li><a href="move">招式</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" id="page-l">
+                <a>語言</a>
+                <ul class="dropdown-content">
+                    <li><a href="tw">中文</a></li>
+                    <li><a href="ct">粵語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 首頁內容 -->
+    <main>
+        <h1>自我介紹</h1>
+        <div class="intro-container">
+            <img src="static/肖像.jpg" alt="悟空照片" class="intro-img">
+            <p class="intro-text">大家好，我是悟空。</p>
+            </div>
+        </section>
+        <!-- 聊天按鈕 -->
+        <div id="chat-button">
+            <img src="static/chat1.jpg" alt="Chat with Goku" id="chat-button-img">
+        </div>
+  
+        <!-- 聊天框 -->
+        <div id="chat-box">
+        <div id="chat-header">與孫悟空聊天</div>
+        <div id="chat-content">
+        <!-- 預設的聊天框對話內容 -->
+            <div class="message goku">
+                <img src="static/chat1.jpg" alt="Goku" class="message-icon">
+                嗨！我是悟空，有什麼想問的嗎？
+            </div>
+        </div>
+        <div id="chat-input">
+            <input type="text" id="user-message" placeholder="輸入訊息...">
+            <button id="send-button">送出</button>
+        </div>
+    </div>
+  
+    </main>
+    <script src="static/f.js"></script>
+</body>
+</html>
